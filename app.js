@@ -13,6 +13,6 @@ app.use(function(req, res, next) {
 app.use('/api/palindrome', require('./routes/palindrome'))
 app.use('/api/generate', require('./routes/generate'))
 
-const PORT = 5000
+const PORT = 80
 
 app.listen(PORT, () => console.log(`App has been started on port ${PORT}`))
