@@ -4,7 +4,8 @@
   "description": "search the longest palindrome in string",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "start" : "node app.js"
   },
   "author": "Alekseev Dmitrii <Alekseyev.d@gmail.com>",
   "license": "ISC",
