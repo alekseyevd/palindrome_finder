@@ -96,7 +96,7 @@ export const wrapper = new Wrapper({
           </div>
         </form>
       </div>
-      <div><a href="/" >View source on Github</a></div>
+      <div><a href="https://github.com/alekseyevd/palindrome_finder" >View source on Github</a></div>
       {{#if response}}
         <div id="response">
         </div>
