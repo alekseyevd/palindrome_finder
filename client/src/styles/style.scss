@@ -1,0 +1,21 @@
+
+body {
+  background: #a7ffeb;
+}
+
+.nav-wrapper, .container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+textarea {
+  height: auto;
+}
+@media only screen and (max-width: 600px) {
+  nav .brand-logo {
+    font-size: 1.5rem;
+    left: 0;
+    -webkit-transform: inherit;
+    transform: inherit;
+  }
+}
