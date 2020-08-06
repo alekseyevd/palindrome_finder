@@ -43,7 +43,7 @@ class Wrapper extends Component {
 
   async generate() {
     try {
-      let response = await http.get('http://127.0.0.1:5000/api/generate')
+      let response = await http.get('/api/generate')
       if (!response.result) throw new Error()
 
       this.data.form.text = response.text
@@ -62,7 +62,7 @@ class Wrapper extends Component {
     let data = {};
     form.forEach((value, key) => {data[key] = value});
 
-    let res = await http.post(`http://127.0.0.1:5000/api/palindrome`, data)
+    let res = await http.post(`/api/palindrome`, data)
     this.data.response = res
 
     //nsole.log(this.data);
