@@ -1,4 +1,5 @@
 const express = require('express')
+const path = require('path')
 
 const app = express()
 
@@ -15,6 +16,7 @@ const PORT = process.env.PORT || 80;
 app.use('/api/palindrome', require('./routes/palindrome'))
 app.use('/api/generate', require('./routes/generate'))
 
+app.use('/', express.static(path.join(__dirname, 'client', 'dist')))
 app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, 'client', 'dist', 'index.html'))
 })
